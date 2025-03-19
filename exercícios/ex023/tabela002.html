@@ -18,28 +18,44 @@
 
 
         table{
-            width: 800px;
+            width: 560px;
             border: 1px solid black;
             border-collapse: collapse;
             margin: auto;
         }
 
 
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
         thead, tfoot{
-            background-color: rgba(0, 212, 0, 0.808);
-            color: rgb(0, 44, 6);
-            font-weight: bolder;
-            font-size: 1.7em;
+            background-color: rgb(56, 56, 56);
+            color: white;
         }
 
 
         tbody{
             font-size: 1.3em;
         }
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgb(255, 255, 255);
+        }
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
 
 
         th{
            padding: 10px; 
+        }
+        th#pop{
+            width: 100px;
         }
 
 
@@ -59,6 +75,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -68,10 +85,11 @@
     -->
 </body>
     <table>
+        <caption>População da Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" id="pop">População</th>
             </tr>
         </thead>
         <tbody>
@@ -91,10 +109,33 @@
                 <td>Bahia</td>
                 <td class="num">14.873.064</td>
             </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr><tr>
+                <td>Pará</td>
+                <td class="num">8.602.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
-            <td>0000</td>
+            <th scope="row">Total de habitantes</th>
+            <th class="num">0000</th>
         </tfoot>
     </table>
 </html>
