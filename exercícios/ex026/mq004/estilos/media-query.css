@@ -2,3 +2,54 @@
 
 /* Todas as demais mídias */
 
+/* Typical Device Breakpoints
+Pequenas telas: até 600px
+Celular: 600px a 768px
+Tablet: 768px a 992px 
+Desktop: minimo 992px a 1200px
+Grandes telas: 1200px e acima
+ */
+
+
+@media print {
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    h1#phone { display: none; }
+    h1#tablet { display: block; }
+    img#phone { display: none; }
+    img#tablet { display: block; }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    h1#phone { display: none; }
+    h1#pc { display: block; }
+    img#phone { display: none; }
+    img#pc { display: block; }
+}
+
+
+@media screen and (min-width: 1200px) { /* Telas grandes */
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    h1#phone { display: none; }
+    h1#tv { display: block; }
+    img#phone { display: none; }
+    img#tv { display: block; }
+}
