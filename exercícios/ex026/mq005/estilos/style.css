@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Mobile First / celular */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -15,7 +17,7 @@ header {
     background-color: rgb(167, 167, 167);
 }
 
-header h1 {
+header > h1 {
     text-align: center;
     padding: 10px;
 }
