@@ -18,30 +18,42 @@
             text-align: center;
             padding: 10px;
 
-            flex-basis: 300px;
+            
         }
 
         div.conteiner > div#cxA {
-            flex-shrink: 0;
-            flex-grow: 2;
-
             background-color: red;
+
+
+            /*flex-grow: 0;
+            flex-shrink: 2;
+            flex-basis: 200px;*/   
+
+            flex: 2 0 200px;
         }
 
         div.conteiner > div#cxB {
-            flex-shrink: 3;
-            flex-grow: 3;
-
             background-color: green;
             color: white;
+
+
+            /*flex-grow: 3;
+            flex-shrink: 3;
+            flex-basis: 200px;*/    
+            
+            flex: 3 3 200px;
         }
 
         div.conteiner > div#cxC {
-            flex-shrink: 2;
-            flex-grow: 0;
-
             background-color: purple;
             color: white;
+
+
+            /*flex-grow: 2;
+            flex-shrink: 0;
+            flex-basis: 200px;*/
+
+            flex: 2 0 200px;
         }
 
     </style>
