@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+
+/* Media Query para celular */
+
+
+
+header, header > nav {
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+
+
+header > nav > a {
+    width: 90vw;
+}
