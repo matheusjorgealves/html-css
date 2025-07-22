@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+}
+
+div.container {
+    border: 3px solid blue;
+
+
+    display: grid;
+    grid-template: repeat(2, 100px) / 100px 40% repeat(4, 1fr);
+
+    gap: 10px;
+
+    place-items: normal normal;
+}
+
+div.item {
+    border: 1px solid black;
+}
+
+/* 
+repeat: EU POSSO USAR ISSO PARA REPETIR UM VALOR
+
+fr: FRAÇÃO - eu dividi o espço que soubrou em 4 partes iguais
+
+%: PERCENTUAL - eu estou dizendo que a segunda coluna vai ocupar 40% do espaço total
+
+gap: é o espaçamento entre os itens do grid
+
+place-items: simplifica o uso de align-items e justify-items, definindo o alinhamento dos itens dentro do grid
+
+grid-template: simplifica na hora de definir linhas e colunas do grid, permitindo o uso de repeat para linhas e colunas repetitivas
+*/

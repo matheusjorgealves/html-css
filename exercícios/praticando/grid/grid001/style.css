@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+}
+
+div.container {
+    border: 3px solid blue;
+
+
+    display: grid;
+    grid-template: auto auto / auto auto auto;
+}
+
+div.item {
+    border: 1px solid black;
+}
