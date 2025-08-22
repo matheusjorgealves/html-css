@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: lightslategray;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+}
